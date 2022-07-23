@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        width: 400px;
+        height: 400px;
+        background: blue;
+      }
+      .green {
+        width: 200px;
+        height: 200px;
+        background: green;
+        /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 属性测试 ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+        margin-top: 50px;
+        /* margin-bottom: 50px; */
+        /* margin-left: 50px; */
+        /* margin-right: 50px; */
+        /* ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ 属性测试 ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+      }
+      .red {
+        width: 200px;
+        height: 200px;
+        background: red;
+      }
+      /*       .container div {
+        float: left;
+      } */
+      /* 测试 margin 横轴方向取值时,添加该声明使 div 盒横向排列 */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="green"></div>
+      <div class="red"></div>
+    </div>
+  </body>
+</html>
