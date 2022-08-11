@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      * {
+        border: 2px dotted red;
+      }
+      #target {
+        background-color: gray;
+        /* width: 200px; */
+        width: 50%;
+        /* width 属性:用来控制元素的宽度,默认值为 auto -> 表示元素自动调整其宽度使内容正确展示。可以设定为上例中的绝对值,还可以设置为百分比的相对值 -> 百分比指的是该元素的容器元素的值x百分比 */
+        max-width: 500px;
+        /* max-width 顺序是 width 的伴生属性:用来表示在不同视口下 宽度 的最大可能值...其默认值为 none -> 表示对宽度不设置限制
+          其他可接受值与长度属性类似...也支持绝对长度和相对长度... */
+        min-width: 300px;
+        /* 与 max-width 类似功能的属性,不过用来表示的是宽度的最小可能值 -> 相对应的其默认值为 0 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        non deleniti velit dicta amet dolores. Reiciendis iusto eos itaque harum
+        dicta nam fugiat voluptas placeat. Numquam quos consequuntur molestias
+        animi?
+      </p>
+    </div>
+  </body>
+</html>

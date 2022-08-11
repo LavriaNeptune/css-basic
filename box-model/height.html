@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      * {
+        border: 2px dotted red;
+      }
+      #target {
+        background-color: gray;
+        height: 50px;
+        /* height 属性:用来控制元素的高度,默认值为 auto -> 表示元素自动调整其高度使内容正确展示。可以设定为上例中的绝对值,还可以设置为百分比的相对值 -> 百分比指的是该元素的容器元素的值x百分比 */
+        /* PS:如果内容与给定的高度并不适配,会出现内容“溢出”的现象发生...至于以何种方式溢出,由容器的 overflow 属性决定 */
+        /* 注意:类似于 max-width 和 min-width -> height 也具备相应的 max-height、min-height 属性...他们之间的逻辑和默认取值均一致 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        non deleniti velit dicta amet dolores. Reiciendis iusto eos itaque harum
+        dicta nam fugiat voluptas placeat. Numquam quos consequuntur molestias
+        animi?
+      </p>
+    </div>
+  </body>
+</html>

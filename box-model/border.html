@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      * {
+        border: 3px dotted red;
+      }
+      #target {
+        background-color: gray;
+        width: 200px;
+        height: 200px;
+
+        border-width: 5px 10px 15px 20px;
+        /* border-width 属性设置的是边框的宽度 -> 实际上 border-width 也是 border-top-width、border-right-width、border-bottom-width、border-left-width 四个属性的简写:根据取值的不同代表不同的简写形式 
+          单值 -> 上下左右均取同一个值
+          双值 -> 其值分别代表 上下 左右
+          三值 -> 其值分别代表 上 左右 下
+          四值 -> 其值分别代买 上 下 左 右
+        如果单独为各个方向上的边框宽度设置值...未设置的宽度默认值为 0 */
+        border-style: solid;
+        border-color: black;
+        /* 以上三条属性可以简写为 border 一条属性,按照 width - style - color 的顺序给出对应的值(仅可以省略 color,省略时 color 取值来自于内部的文本的颜色值)... */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target"></div>
+  </body>
+</html>

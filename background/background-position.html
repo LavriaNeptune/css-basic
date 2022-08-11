@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        border: 1px dotted red;
+        box-sizing: border-box;
+      }
+      body {
+        height: 1000px;
+      }
+      #target {
+        background-image: url(/assets/pic1.png);
+        background-size: 100px auto;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 500px;
+
+        /* background-position: 0% 0%; */
+        /* background-position: 50% 50%; */
+        /* background-position: 250px 250px; */
+        background-position: bottom;
+        /* background-position 属性 -> 接受横向值、纵向值来定位背景图像的位置...百分比指的是相对于容器元素的宽高值... 0% 0% 为默认值 
+          可接受的定位关键字(类似百分比的效果) center -> 居中 top -> 移动至容器元素顶部 bottom -> 底部 left -> 移动至元素左 right -> 移动至元素右 取值规范为 (left center right) (top center bottom) 可以只写一个方向的关键字 -> 另一个变的关键字自动设置为 center */
+        /* ?? 绝对值和百分比值一个是按照图片的左上角定位、一个是按照图像的中心点经行定位 ?? */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target">123</div>
+  </body>
+</html>
