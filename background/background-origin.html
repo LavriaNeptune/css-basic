@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #target {
+        border: 5px dotted red;
+        padding: 50px;
+        background-color: green;
+        background-clip: padding-box;
+        background-image: url(/assets/pic1.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+
+        background-origin: content-box;
+        /* background-origin 属性用来定义背景图像的源点,不同于 background-clip...其默认值为 padding-box PS: background-clip 比 background-origin 要更为优先...毕竟背景图像也是在背景之上所存在的... */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target">Hello World</div>
+  </body>
+</html>
