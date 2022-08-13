@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      #target {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-duration: 3s;
+
+        animation-name: fadeIn;
+        /* animation-name 的属性值为 关键帧名 ,用来定义对应元素使用那一组关键帧...如果不设置该项属性 -> 则默认值为 0,即不设置动画效果 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target"></div>
+  </body>
+</html>
