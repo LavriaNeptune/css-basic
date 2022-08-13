@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* * {
+        border: 5px dotted red;
+      } */
+      body {
+        height: 5000px;
+        /* background-color: gray; */
+        /* 更明显的设置 */
+      }
+      #target {
+        border: 5px dotted red;
+        margin-top: 500px;
+        padding: 50px;
+        background-clip: padding-box;
+        background-image: url(/assets/pic1.png);
+        background-repeat: no-repeat;
+
+        background-attachment: fixed;
+        /* background-attachment 属性是用来设置 背景图像 在页面滚动时的行为...可以取两个值:
+          scroll -> 图片跟随页面一起滚动
+          fixed -> 图片不跟随页面一起滚动,即固定状态 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target">Hello World</div>
+  </body>
+</html>
