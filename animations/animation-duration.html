@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @keyframes move {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(200px);
+        }
+      }
+      #target {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: move;
+
+        animation-duration: 3s;
+        /* animation-duration 用来设置一组动画的持续时间...接受秒、毫秒数值...
+          如果不设置默认值为 0 -> 即不会播放动画 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target"></div>
+  </body>
+</html>

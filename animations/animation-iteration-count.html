@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @keyframes move {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(200px);
+        }
+      }
+      #target {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-duration: 3s;
+        animation-name: move;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: 6;
+        /* animation-iteration-count 属性用来定义动画播放的次数(次数 -> 一次完整的关键帧为一次),期望是整数值
+          可使用特殊关键字 infinite -> 表示动画无线循环播放
+          默认值为 1 -> 即动画仅播放一次 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target"></div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        border: 5px dotted green;
+        background-color: yellow;
+      }
+      @keyframes move {
+        from {
+          transform: translateX(0);
+          background-color: gray;
+        }
+        to {
+          transform: translateX(200px);
+          background-color: red;
+        }
+      }
+      #target {
+        width: 100px;
+        height: 100px;
+        animation-duration: 3s;
+        animation-name: move;
+        animation-iteration-count: 1;
+        animation-direction: reverse;
+        animation-fill-mode: forwards;
+
+        animation-play-state: paused;
+        /* animation-play-state 状态默认情况为 running : 即 animation-name、animation-duration 均为有效定义,动画会自动播放
+        另外一个可取值为 paused -> 动画会在第一帧处暂停(注意并不是在默认样式处暂停) */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target"></div>
+  </body>
+</html>

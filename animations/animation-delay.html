@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      #target {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-duration: 3s;
+        animation-name: fadeIn;
+
+        animation-delay: 2s;
+        /* animation-delay 属性用来设置动画在开始前的等待时间(加载完成后)...接受 s、ms 单位的数值...PS:也接受负值!
+          该属性默认值为 0s -> 即立即运行动画 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target"></div>
+  </body>
+</html>

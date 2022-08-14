@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        border: 2px dotted blue;
+      }
+      #container {
+        display: flex;
+        width: 700px;
+        height: 400px;
+        flex-wrap: wrap;
+        align-content: stretch;
+
+        /* align-content 属性:副轴方向弹性元素排列模式,注意:仅在 flex-wrap: wrap; 且有超出容器一行的 弹性子元素 设置该项属性才有效果...
+        可取值有:
+        stretch(默认值) ->  */
+      }
+      #one,
+      #three,
+      #four,
+      #five {
+        width: 200px;
+        height: 150px;
+      }
+      #two {
+        width: 200px;
+        height: 150px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="one">1</div>
+      <div id="two">2</div>
+      <div id="three">3</div>
+      <div id="four">4</div>
+      <div id="five">5</div>
+    </div>
+  </body>
+</html>

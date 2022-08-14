@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        border: 5px dotted green;
+        background-color: yellow;
+      }
+      @keyframes move {
+        from {
+          transform: translateX(0);
+          background-color: gray;
+        }
+        to {
+          transform: translateX(200px);
+          background-color: red;
+        }
+      }
+      #target {
+        width: 100px;
+        height: 100px;
+        animation-duration: 3s;
+        animation-name: move;
+        animation-iteration-count: 1;
+
+        animation-fill-mode: both;
+        /* animation-fill-mode 属性用来定义动画结束时,动画的样式是否应用到对应元素上...
+        none -> 为该属性默认值,即不采用动画的样式...在动画结束后回归元素本来的样式
+        forwards -> 动画结束时,使用最后应用的帧的样式作为元素的样式
+        backwards -> 动画结束时,使用最前应用的帧的样式作为元素的样式 
+        both -> 动画结束时,最前应用的样式和最后应用的样式均存在...根据样式优先级判断具体应用的样式 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target"></div>
+  </body>
+</html>

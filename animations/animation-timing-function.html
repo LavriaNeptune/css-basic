@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div {
+        border: 5px dotted green;
+        background-color: yellow;
+      }
+      @keyframes move {
+        from {
+          transform: translateX(0);
+          background-color: gray;
+        }
+        to {
+          transform: translateX(200px);
+          background-color: red;
+        }
+      }
+      #target {
+        width: 100px;
+        height: 100px;
+        animation-duration: 3s;
+        animation-name: move;
+        animation-iteration-count: 1;
+        animation-direction: reverse;
+        animation-fill-mode: forwards;
+
+        animation-timing-function: ease-out;
+        /* animation-timing-function:定义如何计算动画的开始和结束之间的数值,其取值为关键字或者 steps() 函数
+          可选的参数:
+          ease(默认值):先慢后快再慢的播放模式
+          ease-in:先慢后快、加速直到结束
+          ease-out:先快后满、减速直到结束
+          ease-in-out 类似 ease 的动画效果,不过更加明显
+          linear:动画以固定速度播放 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target"></div>
+  </body>
+</html>

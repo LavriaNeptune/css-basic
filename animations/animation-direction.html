@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @keyframes move {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(200px);
+        }
+      }
+      #target {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-duration: 3s;
+        animation-name: move;
+        animation-direction: alternate-reverse;
+        /* animation-direction 该属性仅对产生了移动的元素生效...其默认值为 normal -> 按照关键帧顺序进行移动
+          其他可选值
+          reverse -> 按照关键帧相反方向顺序播放动画
+          alternate -> 关键帧按照先正向,后反向的模式播放动画
+          alternate-reverse -> 关键帧按照先反向,后正向的模式播放动画 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target"></div>
+  </body>
+</html>
