@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        border: 2px dotted blue;
+      }
+      #container {
+        display: flex;
+        width: 700px;
+        height: 400px;
+        align-items: flex-start;
+
+        /* flex-basis 属性设置弹性子元素在主轴方向上的长度...
+        可取值:
+        auto -> 根据元素自身的尺寸决定长度
+        绝对单位 -> ?px
+        相对单位 -> 80em */
+      }
+      #one,
+      #three,
+      #five {
+        width: 100px;
+        /* height: 100px; */
+      }
+      #four {
+        width: 100px;
+        height: 200px;
+        background-color: green;
+      }
+      #two {
+        /* width: 100px; */
+        height: 150px;
+        background-color: red;
+        flex-basis: 80px;
+        /* flex-basis 属性用来对弹性子元素设置初始尺寸...可取值有:
+          auto(默认) -> 元素自动根据其内容进行尺寸设置...或者依据其已定义的尺寸
+          绝对数值 -> ?px
+          相对数值 -> em */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="one">1</div>
+      <div id="two">2</div>
+      <div id="three">3</div>
+      <div id="four">4</div>
+      <div id="five">5</div>
+    </div>
+  </body>
+</html>

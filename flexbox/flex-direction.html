@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        border: 2px dotted blue;
+      }
+      #container {
+        display: flex;
+        width: 700px;
+        height: 400px;
+        align-items: flex-start;
+        flex-direction: row;
+        /* flex-direction 属性用来定义弹性子元素的的排列方向,可取值有:
+          row(默认) -> 弹性子元素依照主轴方向排列(左->右)
+          row-reverse -> 弹性子元素按照主轴的相反方向排列
+          column -> 弹性子元素依照副轴方向排列
+          column-reverse -> 弹性子元素按照副轴的反方向排列 */
+      }
+      #one,
+      #three,
+      #five {
+        width: 100px;
+        height: 100px;
+      }
+      #four {
+        width: 100px;
+        height: 200px;
+        background-color: green;
+      }
+      #two {
+        width: 100px;
+        height: 150px;
+        background-color: red;
+        flex-basis: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="one">1</div>
+      <div id="two">2</div>
+      <div id="three">3</div>
+      <div id="four">4</div>
+      <div id="five">5</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        border: 2px dotted blue;
+      }
+      #container {
+        display: flex;
+        width: 300px;
+        height: 400px;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        /* flex-wrap:该属性用来定义弹性子元素是否折行...可取值有:
+        nowrap(默认) -> 不折行,弹性子元素均在同一行上,如果总尺寸超出容器尺寸会溢出
+        wrap -> 折行,让容器元素容纳不下弹性子元素时,溢出的子元素会另其新行进行展示
+        wrap-reverse -> 同 wrap 只不过折行(副轴颠倒)的顺序颠倒了 */
+      }
+      #one,
+      #three,
+      #five {
+        width: 100px;
+        height: 100px;
+      }
+      #four {
+        width: 100px;
+        height: 200px;
+        background-color: green;
+      }
+      #two {
+        width: 100px;
+        height: 150px;
+        background-color: red;
+        flex-basis: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="one">1</div>
+      <div id="two">2</div>
+      <div id="three">3</div>
+      <div id="four">4</div>
+      <div id="five">5</div>
+    </div>
+  </body>
+</html>

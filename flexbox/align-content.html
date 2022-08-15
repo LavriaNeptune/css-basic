@@ -14,11 +14,16 @@
         width: 700px;
         height: 400px;
         flex-wrap: wrap;
-        align-content: stretch;
+        align-content: space-between;
 
-        /* align-content 属性:副轴方向弹性元素排列模式,注意:仅在 flex-wrap: wrap; 且有超出容器一行的 弹性子元素 设置该项属性才有效果...
+        /* align-content 属性:副轴方向弹性元素行级别的排列模式,注意:仅在 flex-wrap: wrap; 且有超出容器一行的 弹性子元素 设置该项属性才有效果...
         可取值有:
-        stretch(默认值) ->  */
+        stretch(默认值) -> 副轴之间多余的空间均分给每一行,注意每行的具体高度由最高的弹性子元素所决定  
+        flex-start -> 副轴仅分配每行所必须的空间,行之间紧凑地向着副轴的起点进行排列
+        flex-end -> 同 flex-start,差别在于对其方向为副轴尾部
+        flex-center-> 副轴仅分配每行所必须的空间,弹性子元素向着副轴的中心对其
+        space-between -> 副轴仅分配每行所必须的空间,多余的空间均分在行与行之间的间隙中 
+        space-around -> 副轴仅分配每行所必须的空间,多余的空间均分给每行,且空间环绕在每行周围 */
       }
       #one,
       #three,

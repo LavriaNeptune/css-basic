@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        border: 2px dotted blue;
+      }
+      #container {
+        display: flex;
+        width: 700px;
+        height: 400px;
+        align-items: flex-start;
+        flex-direction: row;
+      }
+      #one,
+      #three,
+      #five {
+        width: 100px;
+        height: 100px;
+      }
+      #four {
+        width: 100px;
+        height: 200px;
+        background-color: green;
+        order: -1;
+        /* order 属性用来定义弹性子元素的排序顺序,可取值有:
+        0 (默认) -> 按照弹性子元素在 html 代码中的排序顺序排序
+        正数 -> 数值越大越向主轴后方后排
+        负数 -> 数值越小越向主轴前方排列  */
+      }
+      #two {
+        width: 100px;
+        height: 150px;
+        background-color: red;
+        flex-basis: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="one">1</div>
+      <div id="two">2</div>
+      <div id="three">3</div>
+      <div id="four">4</div>
+      <div id="five">5</div>
+    </div>
+  </body>
+</html>

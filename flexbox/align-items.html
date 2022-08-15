@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        border: 2px dotted blue;
+      }
+      #container {
+        display: flex;
+        width: 700px;
+        height: 400px;
+        align-items: baseline;
+        /* align-items 属性:弹性子元素在副轴方向的排列模式
+        可取值有:
+        normal(默认) -> 取决于该元素处在何种布局模式中的一种通用属性...对于弹性项目,效果和 stretch 一致
+        flex-start -> 向副轴的起点方向对齐
+        flex-end -> 向副轴的末尾方向对齐
+        center -> 向副轴的中心对齐 
+        baseline -> 按照弹性元素内部西文文字基线进行排列
+        stretch -> 弹性子元素顺着副轴两方延展,直到占满容器元素的空间 */
+      }
+      #one,
+      #three,
+      #five {
+        width: 100px;
+        /* height: 100px; */
+      }
+      #four {
+        width: 100px;
+        height: 200px;
+        background-color: green;
+      }
+      #two {
+        width: 100px;
+        height: 150px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="one">1</div>
+      <div id="two">2</div>
+      <div id="three">3</div>
+      <div id="four">4</div>
+      <div id="five">5</div>
+    </div>
+  </body>
+</html>

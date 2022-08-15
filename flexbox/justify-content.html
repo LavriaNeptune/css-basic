@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        border: 2px dotted blue;
+      }
+      #container {
+        display: flex;
+        width: 700px;
+        height: 400px;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: flex-end;
+        /* justify-content 属性用来定义弹性子元素在主轴方向上的对其方式,其取值有:
+          flex-start(默认) -> 向主轴的开头对齐 
+          flex-end -> 向主轴的末尾对齐
+          center -> 向主轴的中线对齐
+          space-between 均分多余空间填充到弹性子元素之间
+          space-around 均分多余空间环绕到弹性子元素之间 */
+      }
+      #one,
+      #three,
+      #five {
+        width: 100px;
+        height: 100px;
+      }
+      #four {
+        width: 100px;
+        height: 200px;
+        background-color: green;
+      }
+      #two {
+        width: 100px;
+        height: 150px;
+        background-color: red;
+        flex-basis: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="one">1</div>
+      <div id="two">2</div>
+      <div id="three">3</div>
+      <div id="four">4</div>
+      <div id="five">5</div>
+    </div>
+  </body>
+</html>

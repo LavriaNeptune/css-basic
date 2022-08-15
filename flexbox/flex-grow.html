@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        border: 2px dotted blue;
+      }
+      #container {
+        display: flex;
+        width: 700px;
+        height: 400px;
+        align-items: flex-start;
+        flex-direction: row;
+      }
+      #one,
+      #three,
+      #five {
+        width: 100px;
+        height: 100px;
+      }
+      #four {
+        width: 100px;
+        height: 200px;
+        background-color: green;
+        flex-grow: 2;
+      }
+      #two {
+        width: 100px;
+        height: 150px;
+        background-color: red;
+        flex-basis: 80px;
+        flex-grow: 1;
+        /* flex-grow 属性用来定义弹性子元素在其容器元素中还存在其他空间时,分配空间的系数,支持整数。默认值为 0*/
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="one">1</div>
+      <div id="two">2</div>
+      <div id="three">3</div>
+      <div id="four">4</div>
+      <div id="five">5</div>
+    </div>
+  </body>
+</html>
