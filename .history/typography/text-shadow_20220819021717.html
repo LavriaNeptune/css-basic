@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      .target {
+        text-shadow: ellipsis;
+        /* text-overflow 属性用来定义当文字溢出时的行为,可取值:
+          clip(默认) -> 裁剪掉溢出部分
+          ellipsis -> 溢出部分用省略号替代 */
+        width: 50px;
+
+        /* Both of the following are required for text-overflow */
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="target">Hello World!</p>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      .target {
+        white-space: nowrap;
+        /* white-space 属性用来定义如何处理文本中的空格元素,可取值:
+        normal(默认) -> 连续空格视为单个空格、忽略换行符、文本内容被容器元素所包裹
+        nowrap -> 连续空格视为单个空格、忽略换行符、文本内容如果空间超出容器元素尺寸,保持在同一行并溢出
+        pre -> 保留每一个空格,仅在新行或者 <br> 处断行
+        pre-wrap -> 保留每一个空格,不仅在新行或者 <br> 处断行,到达容器边界时也断行
+        pre-line -> 连续空格视为单个空格,不仅在新行或者 <br> 处断行,到达容器边界时也断行 */
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="target">Hello World! Just do it</p>
+  </body>
+</html>
