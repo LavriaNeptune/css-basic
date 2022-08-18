@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-template-rows: 30px 30px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+        grid-template-areas: 'area-one area-two area-three' 'area-four area-five area-six';
+        /* grid-template-areas 属性是一个可选属性,可以作为 grid-column、grid-row 的值使用...该属性默认值为 none
+        正常来说每行 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-template-rows: 30px 30px;
+
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+        grid-gap: 10px 10px;
+        /* grid-gap 是 grid-column-gap 和 grid-row-gap 属性的合并简写,其取值为先 row 后 column 的长度,模式有:
+        0 0(默认) -> 表示表格之间没有间隙
+        10px -> 表示行间距、列间距均为 10px
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>

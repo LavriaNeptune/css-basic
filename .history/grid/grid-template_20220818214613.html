@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        /* grid-template-columns 属性用来定义网格模板中列的数量和长度,取值有:
+          none(默认) -> 未定义行,所有网格子元素不垂直排列
+          auto -> 根据网格子元素内容所需空间自动设置其尺寸
+          绝对值 -> px
+          相对值 -> em rem fr*/
+        grid-template-rows: 30px 30px;
+        /* 类似 grid-template-columns ,只不过该属性是用来设定网格模板中的行的数量和长度 */
+        grid-column-gap: 10px;
+        /* 定义网格模板布局中列于列之间的间距,其默认值为 0 */
+        grid-row-gap: 10px;
+        /* 类似 grid-column-gap  */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>

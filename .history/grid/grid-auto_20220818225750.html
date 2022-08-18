@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-template-rows: 30px 30px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+        grid-auto-columns: 100px;
+        grid-auto-rows: 50px;
+        /* 以上两个均为预设值 -> 指的是当存在出现未使用 grid-template 系列属性定义的网格出现是,其 column 和 row 应该取的值 
+        */
+      }
+      .sp {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div class="sp">sp</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-template-rows: 30px 30px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+        grid-auto-columns: 100px;
+        grid-auto-rows: 50px;
+        /* 以上两个均为预设值 -> 指的是当存在出现未使用 grid-template 系列属性定义的网格出现是,其 column 和 row 应该取的值 
+        以上两个属性的默认值均为 auto -> 有网格设定值就使用网格设定值,没有网格设定值就使用 auto 值,没有 auto 值就使用元素内容长宽 */
+        grid-auto-flow: row;
+        /* grid-auto-flow 属性用来定义自动生成的网格元素的放置位置,默认值为 row -> 表示自动生成的网格元素在新的一行排列;另外一个可取值为 column -> 表示从列开始 */
+      }
+      .sp {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div class="sp">sp</div>
+    </div>
+  </body>
+</html>

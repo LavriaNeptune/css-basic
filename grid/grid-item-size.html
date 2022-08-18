@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-template-rows: 30px 30px 30px;
+        grid-gap: 10px 10px;
+      }
+      .one {
+        grid-column-start: 1;
+        /* grid-column-start 属性定义网格子元素在列方向从那一列开始计量
+          其默认值为 auto -> 按照每个元素占一列来自动确定 column 的起点和终点 */
+        grid-column-end: 3;
+        /* 类似 grid-column-start ,区别在于该属性定义的是网格元素所占列的终点 */
+        grid-row-start: 1;
+        /* 同 grid-column-start,区别在于定义的是行 */
+        grid-row-end: 2;
+        /* 同上 */
+      }
+      .two {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+      .three {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+      .four {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+    </div>
+  </body>
+</html>
