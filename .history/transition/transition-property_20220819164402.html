@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+      }
+      div:hover {
+        width: 300px;
+        height: 300px;
+        background-color: pink;
+        transform: translateX(200px);
+        transition-duration: 3s;
+
+        transition-property: all;
+        /* transition-property 属性用于定义那些属性加入动效
+        all(默认) -> 可以参加动效的均参加动效
+        单独设定属性 ->  */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target">
+      <p>Hover me</p>
+    </div>
+  </body>
+</html>

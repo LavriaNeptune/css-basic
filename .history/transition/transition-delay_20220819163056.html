@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style>
+      div {
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+      }
+      div:hover {
+        width: 300px;
+        height: 300px;
+        background-color: pink;
+        transform: translateX(500px);
+
+        transition-delay: 1s;
+        /* transition-delay 属性用来定义元素发生变化前等待的时间,可取值有
+        0 -> 立即发生变化
+        ?m -> 等待 ? 秒后发生变化
+        ?ms -> 等待 ? 毫秒后发生变化
+        PS:以上数值均可取负数,表示已经播放 ? 时间 */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target"></div>
+  </body>
+</html>
