@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        color: #2f4f4f;
+        margin-bottom: 10px;
+      }
+
+      #main-nav {
+        margin-top: 10px;
+        list-style: none;
+        padding-left: 0;
+      }
+
+      #main-nav li {
+        display: inline-block;
+      }
+
+      #main-nav a {
+        color: white;
+        background-color: #13a4a4;
+        padding: 5px;
+        border-radius: 2px;
+        text-decoration: none;
+      }
+
+      .featured {
+        background-color: orange;
+      }
+      /* 层叠规则:
+      1. 首先,根据样式来源确定优先级 -> 作者样式表 > 浏览器默认样式(用户代理样式)...在样式来源相同的情况下 ↓
+      2. 然后,按照样式优先级 -> 行内样式 > 选择器样式(大致细分为 id 选择器 > 类选择器 > 标签选择器)... */
+    </style>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 id="page-title" class="title">Wombat Coffee Roasters</h1>
+      <nav>
+        <ul id="main-nav" class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/coffees">Coffees</a></li>
+          <li><a href="/brewers">Brewers</a></li>
+          <li><a href="/specials" class="featured">Specials</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
